@@ -1,0 +1,12 @@
+- label: E-mail
+  icon: email
+  url: mailto:beautyincode@livingit.se
+- label: Twitter
+  icon: twitter
+  url: https://twitter.com/beautyincode
+- label: Facebook
+  icon: facebook
+  url: https://www.facebook.com/beautyincode/
+- label: LinkedIn
+  icon: linkedin
+  url: https://www.linkedin.com/company/living-it

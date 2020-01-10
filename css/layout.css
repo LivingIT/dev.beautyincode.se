@@ -1,0 +1,28 @@
+/**
+ * Layout
+ */
+
+@media screen {
+
+  /**
+   * Landmark content
+   */
+  .landmark-content {
+    margin: 0 auto;
+    max-width: 48rem;
+  }
+
+  /**
+   * Main
+   */
+  main {
+    margin-top: 0;
+  }
+
+  /**
+   * Footer
+   */
+  #footer {
+    margin-top: auto;
+  }
+}

@@ -1,0 +1,34 @@
+# Site settings
+title: 'Beauty In Code 2020'
+baseurl: ''
+url: 'https://beautyincode.se'
+permalink: 'pretty'
+
+# Google Analytics tracking code
+analytics: 'UA-113788547-1'
+
+# Jekyll plugins
+plugins:
+  - 'jekyll-tidy'
+
+# Server settings
+host: 0.0.0.0
+port: 5005
+
+# Exclude
+exclude:
+  - 'CNAME'
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - 'LICENSE'
+  - 'README.md'
+  - 'node_modules'
+  - 'package.json'
+  - 'postcss.*.js'
+  - 'script'
+  - 'src'
+  - 'svg-sprite.config.json'
+  - 'vendor'
+  - 'yarn.lock'
+  - 'Dockerfile'
+  - 'docker-compose.yml'

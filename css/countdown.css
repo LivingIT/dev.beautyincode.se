@@ -1,0 +1,56 @@
+/**
+ * Countdown timer
+ */
+
+@media screen {
+
+  .countdown {
+    display: none;
+    font-size: calc(1.4em + 3vw);
+    font-weight: 500;
+    line-height: 1;
+    padding: 1rem 0.5rem;
+  }
+
+  .countdown > * {
+    margin-top: 0;
+  }
+
+  .js .countdown {
+    display: block;
+    text-align: center;
+  }
+
+  .countdown__unit {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .countdown__unit + .countdown__unit {
+    margin: 0 0 0 0.25em;
+  }
+
+  .countdown__unit::after {
+    font-size: 0.3em;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .countdown__unit.days::after {
+    content: "days";
+  }
+
+  .countdown__unit.hours::after {
+    content: "hours";
+  }
+
+  .countdown__unit.minutes::after {
+    content: "minutes";
+  }
+
+  .countdown__unit.seconds::after {
+    content: "seconds";
+  }
+}

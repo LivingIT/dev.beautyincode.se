@@ -1,0 +1,23 @@
+<header id="header">
+
+  <div class="header__landmark">
+
+    <div class="landmark-content header__nav">
+      <div class="header__logo">
+        <h1 class="at-only">{{ site.title }}</h1>
+        {% include svg.html icon="logo" %}
+      </div>
+
+      <ul class="toc">
+        <li class="toc__item"><a href="#schedule">Schedule</a></li>
+        <li class="toc__item"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="landmark-content">
+    {% include hero.html %}
+  </div>
+
+</header>

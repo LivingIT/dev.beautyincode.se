@@ -1,0 +1,74 @@
+- timeslot: "08:15 - 09:00"
+  name: "The doors open"
+  image: "/images/welcome.jpg"
+
+- timeslot: "09:00 - 09:45"
+  name: "GeePaw Hill"
+  # title: ""
+  image: "/images/geepaw-hill.jpg"
+  # description: |
+  #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
+  #
+  #   Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
+
+- timeslot: "09:45 - 10:15"
+  name: "Fika"
+  image: "/images/fika.jpg"
+
+- timeslot: "10:15 - 11:00"
+  name: "Nyari Samushonga"
+  # title: ""
+  image: "/images/nyari.jpg"
+  # description: |
+  #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
+  #
+  #   Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
+
+- timeslot: "11:15 - 12:00"
+  name: "TBA"
+  # title: ""
+  image: "/images/placeholder.png"
+  # description: |
+  #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
+  #
+  #   Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
+
+- timeslot: "12:00 - 13:00"
+  name: "Lunch"
+  image: "/images/lunch.jpg"
+
+- timeslot: "13:00 - 13:45"
+  name: "Kevlin Henney"
+  title: "Lambda? You Keep Using that Word"
+  image: "/images/kevlin-henney.jpg"
+  description: |
+    Lambdas. All the cool kid languages have them. But does 'lambda' mean what
+    C#, Java, Python, C++, etc. mean by 'lambda'? Where did lambdas come from?
+    What were they originally for? What is their relationship to data
+    abstraction?
+
+    In this session we will look into the history, the syntax and the uses of
+    lambdas and the way in which lambda constructs in various languages do (or
+    do not) match the original construct introduced in lambda calculus.
+
+- timeslot: "14:00 - 14:45"
+  name: "Aslam Khan"
+  # title: ""
+  image: "/images/aslam.jpg"
+  # description: |
+  #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
+  #
+  #   Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.
+
+- timeslot: "14:45 - 15:15"
+  name: "Coffee"
+  image: "/images/coffee.jpg"
+
+- timeslot: "15:15 - 16:00"
+  name: "Alistair Cockburn"
+  # title: ""
+  image: "/images/alistair-cockburn.jpg"
+  # description: |
+  #   You can write [Markdown](https://daringfireball.net/projects/markdown/) here. Want several paragraphs?
+  #
+  #   Be sure to leave an empty line between each paragraph and Jekyll will handle the rest.

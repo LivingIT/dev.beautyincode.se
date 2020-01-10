@@ -1,0 +1,21 @@
+<ul class="schedule">
+  {% for item in site.data.schedule %}
+  <li class="schedule__item">
+    <div class="schedule__item-timeslot">
+      <span>{{ item.timeslot }}</span>
+    </div>
+    <div class="schedule__item-content">
+      {% if item.name %}<h3>{{ item.name }}</h3>{% endif %}
+      {% if item.title %}<h4>{{ item.title }}</h4>{% endif %}
+      {% if item.description %}
+      <div class="schedule__item-description">
+        {{ item.description | markdownify }}
+      </div>
+      {% endif %}
+    </div>
+    <div class="schedule__item-image">
+      <img src="{{ item.image }}" alt="">
+    </div>
+  </li>
+  {% endfor %}
+</ul>

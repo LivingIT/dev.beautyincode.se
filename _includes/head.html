@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+
+<title>{{ site.title }}</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- Styleshet -->
+{% for css in site.static_files %}
+  {% if css.path contains "/css" %}
+    <link rel="stylesheet" href="{{ site.baseurl }}{{ css.path }}">
+  {% endif %}
+{% endfor %}
+
+{% include scripts.html %}
+{% include analytics.html %}

@@ -1,0 +1,98 @@
+/**
+ * main.css
+ *
+ * Overall styling
+ */
+
+@media screen {
+
+  /**
+   * Content block
+   */
+  .content-block {
+    background-color: hsl(0, 0%, 100%);
+    padding: 4em 1em;
+  }
+
+  .content-block + .content-block {
+    margin-top: 0;
+  }
+
+  /* Themes */
+  .content-block.theme-1 {
+    background-color: hsl(346, 86%, 39%);
+    color: hsla(0, 0%, 100%, 0.8);
+  }
+
+  .content-block.theme-2 {
+    background-color: hsl(153, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.8);
+  }
+
+  .content-block.theme-3 {
+    background-color: hsl(215, 47%, 21%);
+    color: hsla(0, 0%, 100%, 0.8);
+  }
+
+  /* Content block heading */
+  .content-block h2 {
+    font-size: 2em;
+  }
+
+  /**
+   * CTA (Call to action)
+   */
+  .cta {
+    display: inline-block;
+    background-color: hsl(346, 86%, 39%);
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding: 0.4em 0.8em;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: none;
+  }
+
+  /**
+   * Skip links
+   */
+  #skip {
+    left: -9999px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  #skip a:focus,
+  #skip a:active {
+    background: hsl(0, 0%, 27%);
+    color: hsl(0, 0%, 100%);
+    display: block;
+    font-weight: bold;
+    left: 9999px;
+    line-height: 1.0;
+    padding: 0.5em 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 32em) {
+
+  /**
+   * Figure + text
+   */
+  .figure-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2em;
+  }
+
+  .figure-text > * {
+    margin-top: 0;
+  }
+}
