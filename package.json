@@ -6,10 +6,10 @@
   "scripts": {
     "prestart": "yarn && yarn run build",
     "start": "concurrently 'yarn run watch' 'yarn run jekyll:serve'",
-    "watch": "yarn run watch:css && yarn run watch:svg && yarn run watch:js",
+    "watch": "concurrently 'yarn run watch:css' 'yarn run watch:svg' 'yarn run watch:js'",
     "watch:css": "onchange ./src/css/* -i -- yarn run css",
-    "watch:svg": "onchange ./src/svg/* -i -- yarn run svg",
     "watch:js": "onchange ./src/js/* -i -- yarn run js",
+    "watch:svg": "onchange ./src/svg/* -i -- yarn run svg",
     "css": "uglifycss ./src/css/*.css --output ./_includes/styles.css",
     "svg": "svg-sprite -C svg-sprite.config.json --dest ./_includes src/svg/*.svg",
     "js": "uglifyjs ./src/js/*.js --output ./_includes/main.js",

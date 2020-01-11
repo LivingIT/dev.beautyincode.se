@@ -67,5 +67,5 @@ if (didCutTheMustard) {
   }
 
   // Start the countdown
-  countdown('2020/03/07 08:15:00');
+  countdown('2020/01/11 19:00:00');
 }
