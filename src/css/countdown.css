@@ -10,6 +10,8 @@
     font-weight: 500;
     line-height: 1;
     padding: 1rem 0.5rem;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
   }
 
   .countdown > * {
@@ -19,6 +21,10 @@
   .js .countdown {
     display: block;
     text-align: center;
+  }
+
+  .js .countdown.active {
+    opacity: 1;
   }
 
   .countdown__unit {

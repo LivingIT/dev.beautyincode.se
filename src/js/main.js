@@ -59,6 +59,10 @@ if (didCutTheMustard) {
       } else {
         return;
       }
+
+      const isActive = countDownElem.classList.contains('active');
+
+      if (!isActive) countDownElem.classList.add('active');
     }
   }
 
