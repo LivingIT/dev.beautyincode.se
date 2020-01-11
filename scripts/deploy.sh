@@ -1,5 +1,5 @@
 #!/bin/sh
 
 yarn install --production --pure-lockfile
-# yarn deploy
+yarn build
 jekyll build --config "_config.yml,_config.prod.yml"
