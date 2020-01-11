@@ -16,6 +16,7 @@
     "jekyll:serve": "sleep 1; jekyll serve --incremental",
     "jekyll:build": "jekyll build --incremental",
     "build": "yarn run css && yarn run svg && yarn run js",
+    "lint": "yarn run lint:css",
     "lint:css": "stylelint ./src/css/*.css"
   },
   "author": "Fredrik Frodlund",
