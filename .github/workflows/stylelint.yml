@@ -17,4 +17,3 @@ jobs:
         uses: actions-hub/stylelint@v1.1.2
         env:
           PATTERN: 'src/css/*.css'
-          CONFIG_PATH: './.stylelintrc'
