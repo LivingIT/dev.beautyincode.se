@@ -19,7 +19,7 @@
   },
   "author": "Fredrik Frodlund",
   "license": "UNLICENSED",
-  "devDependencies": {
+  "dependencies": {
     "concurrently": "^4.1.0",
     "onchange": "^5.2.0",
     "svg-sprite": "^1.3.7",
