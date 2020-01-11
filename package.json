@@ -4,7 +4,7 @@
   "description": "Dev web site for Beauty In Code",
   "main": "index.html",
   "scripts": {
-    "prestart": "yarn",
+    "prestart": "yarn && yarn run build",
     "start": "concurrently 'yarn run watch' 'yarn run jekyll:serve'",
     "watch": "yarn run watch:css && yarn run watch:svg && yarn run watch:js",
     "watch:css": "onchange ./src/css/* -i -- yarn run css",
