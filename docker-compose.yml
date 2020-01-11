@@ -3,7 +3,7 @@ version: '3'
 services:
 
   jekyll:
-    container_name: bic-jekyll
+    container_name: bicdev-jekyll
 
     build:
       context: .
