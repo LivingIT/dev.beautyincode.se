@@ -19,6 +19,6 @@ services:
       JEKYLL_ENV: development
 
     ports:
-      - '5005:5005'
+      - '5006:5006'
 
     command: yarn start
