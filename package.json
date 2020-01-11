@@ -6,22 +6,25 @@
   "scripts": {
     "prestart": "yarn && yarn run build",
     "start": "concurrently 'yarn run watch' 'yarn run jekyll:serve'",
-    "watch": "yarn run watch:css && yarn run watch:svg && yarn run watch:js",
+    "watch": "concurrently 'yarn run watch:css' 'yarn run watch:svg' 'yarn run watch:js'",
     "watch:css": "onchange ./src/css/* -i -- yarn run css",
-    "watch:svg": "onchange ./src/svg/* -i -- yarn run svg",
     "watch:js": "onchange ./src/js/* -i -- yarn run js",
+    "watch:svg": "onchange ./src/svg/* -i -- yarn run svg",
     "css": "uglifycss ./src/css/*.css --output ./_includes/styles.css",
     "svg": "svg-sprite -C svg-sprite.config.json --dest ./_includes src/svg/*.svg",
     "js": "uglifyjs ./src/js/*.js --output ./_includes/main.js",
     "jekyll:serve": "sleep 1; jekyll serve --incremental",
     "jekyll:build": "jekyll build --incremental",
-    "build": "yarn run css && yarn run svg && yarn run js"
+    "build": "yarn run css && yarn run svg && yarn run js",
+    "lint:css": "stylelint ./src/css/*.css"
   },
   "author": "Fredrik Frodlund",
   "license": "UNLICENSED",
   "dependencies": {
     "concurrently": "^4.1.0",
     "onchange": "^5.2.0",
+    "stylelint": "^12.0.1",
+    "stylelint-color-format": "^1.0.0",
     "svg-sprite": "^1.3.7",
     "uglify-es": "^3.0.28",
     "uglifycss": "^0.0.29",

@@ -74,7 +74,7 @@
       grid-template-columns:
         [image] minmax(8rem, 1fr)
         [content] 2fr
-        [main-end]
+        [main-end];
     }
 
     .schedule__item-timeslot {
