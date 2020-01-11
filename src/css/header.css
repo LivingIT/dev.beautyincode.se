@@ -1,0 +1,69 @@
+/**
+ * Header
+ */
+
+@media screen {
+
+  /**
+   * Layout
+   */
+  #header {
+    background-image: url("/images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+  }
+
+  .header__landmark {
+    background-color: hsla(0, 0%, 0%, 0.9);
+    padding: 1rem;
+  }
+
+  .header__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__logo {
+    margin-right: auto;
+  }
+
+  .header__logo .icon {
+    --logo-size: 4rem;
+    height: var(--logo-size);
+    width: var(--logo-size);
+  }
+
+  /**
+   * Table of contents
+   */
+  .toc {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+
+  .toc__item + .toc__item {
+    margin-left: 1em;
+  }
+
+  .toc__item a {
+    text-decoration: none;
+  }
+
+  .toc__item a:hover,
+  .toc__item a:active {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: 22em) {
+
+  .toc {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

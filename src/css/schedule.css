@@ -1,0 +1,125 @@
+/**
+ * Schedule
+ */
+
+@media screen {
+
+  .schedule {
+    margin-left: 0;
+  }
+
+  .schedule__item {
+    background-color: hsla(0, 0%, 100%, 0.05);
+    padding: 2em 1em;
+    margin-top: 0;
+  }
+
+  .schedule__item:nth-child(odd) {
+    background-color: hsla(0, 0%, 100%, 0.07);
+  }
+
+  .schedule__item-timeslot span {
+    font-size: 0.8em;
+    font-weight: 500;
+    padding: 0.1em 0.2em;
+  }
+
+  .schedule__item-image img {
+    display: block;
+  }
+
+  .schedule__item-content h3 {
+    font-size: 1.3em;
+    margin-bottom: 0;
+  }
+
+  .schedule__item-content h4 {
+    display: block;
+    margin-top: 0.5em;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.1em;
+  }
+
+  @supports (display: grid) {
+
+    .schedule__item {
+      display: grid;
+      grid-template-rows:
+        [main-start] auto
+        [content] auto
+        [main-end];
+      grid-gap: 1em;
+    }
+
+    .schedule__item > * {
+      margin-top: 0;
+    }
+
+    .schedule__item-timeslot {
+      border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+    }
+  }
+}
+
+@media screen and (min-width: 28rem) {
+
+  @supports (display: grid) {
+
+    .schedule__item {
+      grid-template-rows:
+        [main-start] auto
+        [content] auto
+        [main-end];
+      grid-template-columns:
+        [image] minmax(8rem, 1fr)
+        [content] 2fr
+        [main-end]
+    }
+
+    .schedule__item-timeslot {
+      grid-column: image / main-end;
+    }
+
+    .schedule__item-image {
+      grid-row: content / main-end;
+      grid-column: image / content;
+    }
+
+    .schedule__item-content {
+      grid-row: content / main-end;
+      grid-column: content / main-end;
+    }
+  }
+}
+
+@media screen and (min-width: 44em) {
+
+  @supports (display: grid) {
+
+    .schedule__item {
+      grid-template-rows: 1fr;
+      grid-template-columns:
+        [timeslot] 6.4rem
+        [image] 10rem
+        [content] 1fr
+        [main-end];
+    }
+
+    .schedule__item-timeslot {
+      grid-row: 1;
+      grid-column: timeslot / content;
+      border-bottom: 0;
+    }
+
+    .schedule__item-image {
+      grid-row: 1;
+      grid-column: image / content;
+    }
+
+    .schedule__item-content {
+      grid-row: 1;
+      grid-column: content / main-end;
+    }
+  }
+}
