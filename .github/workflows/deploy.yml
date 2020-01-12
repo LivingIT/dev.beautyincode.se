@@ -36,7 +36,7 @@ jobs:
       - name: Bundle install
         run: |
           gem install bundler
-          bundle install --jobs 4 --retry 3
+          bundle install --jobs 4 --retry 3 --deployment
 
       - name: Jekyll build
         run: jekyll build --config "_config.yml,_config.prod.yml"
