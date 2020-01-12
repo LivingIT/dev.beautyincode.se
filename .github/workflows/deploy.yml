@@ -45,7 +45,8 @@ jobs:
       #   run: jekyll build --config "_config.yml,_config.prod.yml"
 
       - name: Jekyll build
-        uses: agentd00nut/jekyll-build-optional-deploy-gh-pages@master
+        uses: docker://jekyll/minimal
+        run: jekyll build --config "_config.yml,_config.prod.yml"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v2.5.1
