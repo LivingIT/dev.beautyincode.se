@@ -23,7 +23,7 @@ jobs:
           node-version: '10.16'
 
       - name: Install Node packages
-        run: yarn install --production --pure-lockfile --silent --non-interactive
+        run: yarn install --production --pure-lockfile --non-interactive
 
       - name: Build assets
         run: yarn run build
@@ -36,7 +36,7 @@ jobs:
       - name: Bundle install
         run: |
           gem install bundler
-          bundle install --jobs 4 --retry 3 --deployment
+          bundle install --jobs 4 --retry 3
 
       - name: Jekyll build
         run: jekyll build --config "_config.yml,_config.prod.yml"
