@@ -37,9 +37,8 @@ jobs:
       - name: Install Node packages
         run: yarn install --production --pure-lockfile --non-interactive
 
-      - uses: stefanoeb/eslint-action@1.0.2
-        with:
-          files: src/js/
+      - name: eslint
+        run: yarn run lint:js
 
   html-proofer:
 
