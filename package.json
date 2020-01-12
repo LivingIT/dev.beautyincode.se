@@ -17,7 +17,7 @@
     "jekyll:build": "jekyll build --incremental",
     "build": "yarn run css && yarn run svg && yarn run js",
     "lint": "yarn run lint:css && yarn run lint:js",
-    "lint:js": "eslint js/**/*.js",
+    "lint:js": "eslint src/js/*.js",
     "lint:css": "stylelint ./src/css/*.css"
   },
   "author": "Fredrik Frodlund",
