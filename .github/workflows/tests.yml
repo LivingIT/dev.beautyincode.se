@@ -8,7 +8,7 @@ on:
 jobs:
   lint-css:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
 
     steps:
       - uses: actions/checkout@v1
@@ -17,3 +17,12 @@ jobs:
         uses: actions-hub/stylelint@v1.1.2
         env:
           PATTERN: 'src/css/*.css'
+
+  html-proofer:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+      - uses: chabad360/htmlproofer@master
+        with:
+          directory: "./_site"
