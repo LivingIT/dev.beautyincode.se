@@ -55,4 +55,5 @@ jobs:
 
       - uses: chabad360/htmlproofer@master
         with:
-          directory: "./_site"
+          directory: './_site'
+          arguments: '--empty_alt_ignore'
