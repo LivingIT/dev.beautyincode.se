@@ -29,6 +29,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.16'
+
+      - name: Install Node packages
+        run: yarn install --production --pure-lockfile --non-interactive
+
       - uses: stefanoeb/eslint-action@1.0.2
         with:
           files: src/js/
