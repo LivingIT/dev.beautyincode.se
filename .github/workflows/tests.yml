@@ -27,6 +27,8 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
+      - uses: actions/checkout@v1
+
       - uses: chabad360/htmlproofer@master
         with:
           directory: "./_site"
