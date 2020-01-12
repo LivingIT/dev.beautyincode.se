@@ -22,10 +22,10 @@ jobs:
         with:
           node-version: '10.16'
 
-      - name: Install Yarn packages
-        run: yarn install --production --pure-lockfile
+      - name: Install Node packages
+        run: yarn install --production --pure-lockfile --silent --non-interactive
 
-      - name: Build
+      - name: Build assets
         run: yarn run build
 
       - name: Set up Ruby 2.4
