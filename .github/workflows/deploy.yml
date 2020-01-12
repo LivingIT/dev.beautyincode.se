@@ -47,7 +47,7 @@ jobs:
       - name: Jekyll build
         uses: docker://jekyll/minimal
         with:
-          args: /bin/sh -c 'jekyll build --config "_config.yml,_config.prod.yml"'
+          args: /bin/sh -c "jekyll build --config \"_config.yml,_config.prod.yml\""
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v2.5.1
