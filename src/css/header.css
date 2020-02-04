@@ -31,9 +31,8 @@
   }
 
   .header__logo .icon {
-    --logo-size: 4rem;
-    height: var(--logo-size);
-    width: var(--logo-size);
+    height: 4rem;
+    width: 4rem;
   }
 
   /**
