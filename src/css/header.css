@@ -40,6 +40,7 @@
    */
   .toc {
     font-weight: bold;
+    text-align: right;
     text-transform: uppercase;
     margin: 0;
     padding: 0;
@@ -59,7 +60,7 @@
   }
 }
 
-@media only screen and (min-width: 22em) {
+@media only screen and (min-width: 26em) {
 
   .toc {
     display: flex;
