@@ -69,3 +69,27 @@ if (didCutTheMustard) {
   // Start the countdown
   countdown('2020/03/07 09:00:00');
 }
+
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function scrollHandler() {
+  if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("scrollToTopContainer").style.display = "block";
+  } else {
+    document.getElementById("scrollToTopContainer").style.display = "none";
+  }
+}
+
+if(document.getElementById("scrollToTopContainer") != undefined && 
+  document.getElementById("scrollToTopButton") != undefined) {
+
+  document.getElementById("scrollToTopButton").onclick = scrollToTop;
+  window.onscroll = scrollHandler;
+
+  if(document.body.scrollTop <= 50 || document.documentElement.scrollTop <= 50) {
+    document.getElementById("scrollToTopContainer").style.display = "none";
+  }
+}
