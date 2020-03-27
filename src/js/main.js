@@ -16,6 +16,7 @@ var didCutTheMustard = 'querySelector' in document
  * Countdown timer
  */
 function countdown(endDate) {
+  console.log(endDate)
   const countDownElem = document.querySelector('#countdown');
 
   if (!countDownElem) return;
@@ -67,7 +68,7 @@ if (didCutTheMustard) {
   document.querySelector('html').classList.add('js');
 
   // Start the countdown
-  countdown('2020/03/07 09:00:00');
+  countdown('2021/03/06 09:00:00');
 }
 
 function scrollToTop() {
