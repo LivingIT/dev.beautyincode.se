@@ -16,7 +16,6 @@ var didCutTheMustard = 'querySelector' in document
  * Countdown timer
  */
 function countdown(endDate) {
-  console.log(endDate)
   const countDownElem = document.querySelector('#countdown');
 
   if (!countDownElem) return;
