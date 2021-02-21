@@ -67,7 +67,7 @@ if (didCutTheMustard) {
   document.querySelector('html').classList.add('js');
 
   // Start the countdown
-  countdown('2021/03/06 09:00:00');
+  countdown('2022/03/05 09:00:00');
 }
 
 function scrollToTop() {
